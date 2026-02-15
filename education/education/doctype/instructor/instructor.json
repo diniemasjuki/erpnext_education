@@ -7,8 +7,11 @@
  "document_type": "Other",
  "engine": "InnoDB",
  "field_order": [
-  "instructor_name",
   "employee",
+  "column_break_jomb",
+  "user",
+  "section_break_izud",
+  "instructor_name",
   "gender",
   "column_break_5",
   "status",
@@ -88,11 +91,25 @@
    "label": "Gender",
    "options": "Gender",
    "read_only_depends_on": "employee"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "Link with User ID",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_izud",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jomb",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "image",
  "links": [],
- "modified": "2024-05-31 14:15:19.085273",
+ "modified": "2026-02-09 12:43:29.841735",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Instructor",
@@ -131,6 +148,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",

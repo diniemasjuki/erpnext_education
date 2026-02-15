@@ -10,23 +10,28 @@
  "field_order": [
   "section_break_1",
   "enabled",
+  "section_break_syrv",
+  "user",
+  "column_break_qvva",
+  "student_applicant",
   "section_break_3",
+  "naming_series",
   "first_name",
   "middle_name",
   "last_name",
   "column_break_4",
-  "naming_series",
   "joining_date",
-  "user",
-  "student_applicant",
+  "id_card",
   "image",
   "section_break_7",
-  "student_email_id",
-  "date_of_birth",
-  "blood_group",
-  "column_break_3",
-  "student_mobile_number",
   "gender",
+  "date_of_birth",
+  "age",
+  "column_break_talw",
+  "student_email_id",
+  "student_mobile_number",
+  "column_break_3",
+  "blood_group",
   "nationality",
   "address_tab",
   "section_break_22",
@@ -72,28 +77,37 @@
    "fieldtype": "Section Break"
   },
   {
+   "fetch_from": "user.first_name",
    "fieldname": "first_name",
    "fieldtype": "Data",
    "in_global_search": 1,
+   "in_list_view": 1,
    "label": "First Name",
    "reqd": 1
   },
   {
+   "fetch_from": "user.middle_name",
    "fieldname": "middle_name",
    "fieldtype": "Data",
    "label": "Middle Name"
   },
   {
+   "fetch_from": "user.last_name",
    "fieldname": "last_name",
    "fieldtype": "Data",
    "in_global_search": 1,
-   "label": "Last Name"
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
   },
   {
    "fieldname": "user",
    "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
    "label": "User ID",
-   "options": "User"
+   "options": "User",
+   "unique": 1
   },
   {
    "fieldname": "column_break_4",
@@ -102,12 +116,14 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming Series",
    "no_copy": 1,
    "options": "EDU-STU-.YYYY.-",
    "set_only_once": 1
   },
   {
+   "fetch_from": "user.email",
    "fieldname": "student_email_id",
    "fieldtype": "Data",
    "in_global_search": 1,
@@ -116,6 +132,7 @@
    "unique": 1
   },
   {
+   "fetch_from": "user.mobile_no",
    "fieldname": "student_mobile_number",
    "fieldtype": "Data",
    "in_global_search": 1,
@@ -141,6 +158,7 @@
    "label": "Personal Details"
   },
   {
+   "fetch_from": "user.birth_date",
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
    "label": "Date of Birth"
@@ -156,6 +174,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "user.gender",
    "fieldname": "gender",
    "fieldtype": "Link",
    "label": "Gender",
@@ -171,7 +190,8 @@
    "fieldtype": "Link",
    "label": "Student Applicant",
    "options": "Student Applicant",
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fieldname": "section_break_22",
@@ -311,6 +331,34 @@
   {
    "fieldname": "column_break_rgpi",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "user.id_card",
+   "fieldname": "id_card",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "ID/IC/MyKad/MyKid",
+   "unique": 1
+  },
+  {
+   "fetch_from": "user.age",
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Age"
+  },
+  {
+   "fieldname": "section_break_syrv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qvva",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_talw",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "image",
@@ -351,7 +399,7 @@
    "link_fieldname": "student"
   }
  ],
- "modified": "2024-06-07 16:52:48.135292",
+ "modified": "2026-02-09 12:32:34.613886",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Student",
@@ -385,6 +433,7 @@
    "share": 1
   }
  ],
+ "row_format": "Dynamic",
  "show_name_in_global_search": 1,
  "show_title_field_in_link": 1,
  "sort_field": "modified",

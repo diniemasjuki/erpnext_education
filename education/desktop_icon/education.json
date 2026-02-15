@@ -1,0 +1,41 @@
+{
+ "app": "education",
+ "bg_color": "blue",
+ "creation": "2026-02-09 09:59:30.660145",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon": "education",
+ "icon_image": "",
+ "icon_type": "Link",
+ "idx": 50,
+ "label": "Education",
+ "link": "",
+ "link_to": "",
+ "link_type": "External",
+ "logo_url": "/private/files/education.png",
+ "modified": "2026-02-12 08:25:55.519124",
+ "modified_by": "Administrator",
+ "name": "Education",
+ "owner": "Administrator",
+ "restrict_removal": 1,
+ "roles": [
+  {
+   "role": "Academics User"
+  },
+  {
+   "role": "Instructor"
+  },
+  {
+   "role": "Student"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
+ "sidebar": "",
+ "standard": 1
+}
