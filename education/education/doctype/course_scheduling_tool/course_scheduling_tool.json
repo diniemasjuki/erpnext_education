@@ -158,7 +158,7 @@
  "hide_toolbar": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-02-20 17:01:28.249624",
+ "modified": "2026-02-17 02:21:53.849117",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Course Scheduling Tool",
@@ -166,11 +166,22 @@
  "permissions": [
   {
    "create": 1,
+   "delete": 1,
    "read": 1,
-   "role": "Academics User",
+   "role": "EDU - Academics User",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "EDU - Education Manager",
+   "select": 1,
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

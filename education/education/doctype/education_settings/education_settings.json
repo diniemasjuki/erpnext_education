@@ -178,7 +178,7 @@
  ],
  "issingle": 1,
  "links": [],
- "modified": "2026-02-04 12:15:05.069346",
+ "modified": "2026-02-17 02:23:50.262445",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Education Settings",
@@ -190,19 +190,14 @@
    "email": 1,
    "print": 1,
    "read": 1,
-   "role": "System Manager",
+   "role": "EDU - Education Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   },
   {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "print": 1,
    "read": 1,
-   "role": "Education Manager",
-   "share": 1,
-   "write": 1
+   "role": "EDU - Academics User"
   }
  ],
  "quick_entry": 1,

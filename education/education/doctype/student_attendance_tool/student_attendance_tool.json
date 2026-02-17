@@ -93,7 +93,7 @@
  "hide_toolbar": 1,
  "issingle": 1,
  "links": [],
- "modified": "2020-10-23 17:52:28.078971",
+ "modified": "2026-02-17 03:05:08.642317",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Student Attendance Tool",
@@ -102,17 +102,24 @@
   {
    "create": 1,
    "read": 1,
-   "role": "Instructor",
+   "role": "EDU - Education Manager",
    "write": 1
   },
   {
    "create": 1,
    "read": 1,
-   "role": "Academics User",
+   "role": "EDU - Academics User",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "EDU - Instructor",
    "write": 1
   }
  ],
- "restrict_to_domain": "",
+ "row_format": "Dynamic",
  "sort_field": "modified",
- "sort_order": "DESC"
+ "sort_order": "DESC",
+ "states": []
 }

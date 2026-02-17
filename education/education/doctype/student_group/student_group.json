@@ -32,7 +32,8 @@
    "in_standard_filter": 1,
    "label": "Academic Year",
    "options": "Academic Year",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "group_based_on",
@@ -65,14 +66,16 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Academic Term",
-   "options": "Academic Term"
+   "options": "Academic Term",
+   "search_index": 1
   },
   {
    "fieldname": "program",
    "fieldtype": "Link",
    "in_global_search": 1,
    "label": "Program",
-   "options": "Program"
+   "options": "Program",
+   "search_index": 1
   },
   {
    "fieldname": "batch",
@@ -133,7 +136,7 @@
   }
  ],
  "links": [],
- "modified": "2022-12-05 10:50:08.798494",
+ "modified": "2026-02-17 03:08:50.865137",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Student Group",
@@ -141,8 +144,18 @@
  "owner": "Administrator",
  "permissions": [
   {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
    "read": 1,
-   "role": "Instructor"
+   "report": 1,
+   "role": "EDU - Education Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
   },
   {
    "create": 1,
@@ -152,12 +165,23 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Academics User",
+   "role": "EDU - Academics User",
+   "select": 1,
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Instructor",
+   "select": 1,
+   "share": 1
   }
  ],
- "restrict_to_domain": "",
+ "row_format": "Dynamic",
  "search_fields": "program, batch, course",
  "sort_field": "modified",
  "sort_order": "DESC",

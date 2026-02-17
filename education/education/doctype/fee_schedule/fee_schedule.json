@@ -51,7 +51,8 @@
    "in_list_view": 1,
    "label": "Fee Structure",
    "options": "Fee Structure",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "due_date",
@@ -94,27 +95,31 @@
    "fieldtype": "Link",
    "label": "Student Category",
    "options": "Student Category",
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fieldname": "program",
    "fieldtype": "Link",
    "label": "Program",
    "options": "Program",
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   },
   {
    "fieldname": "academic_year",
    "fieldtype": "Link",
    "label": "Academic Year",
    "options": "Academic Year",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "academic_term",
    "fieldtype": "Link",
    "label": "Academic Term",
-   "options": "Academic Term"
+   "options": "Academic Term",
+   "search_index": 1
   },
   {
    "fieldname": "section_break_10",
@@ -281,7 +286,7 @@
    "link_fieldname": "fee_schedule"
   }
  ],
- "modified": "2024-07-10 00:17:14.407591",
+ "modified": "2026-02-17 02:30:04.636819",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Fee Schedule",
@@ -290,6 +295,7 @@
  "permissions": [
   {
    "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -298,38 +304,14 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Academics User",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Accounts User",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
-   "cancel": 1,
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Accounts Manager",
+   "role": "EDU - Education Manager",
+   "select": 1,
    "share": 1,
    "submit": 1,
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [

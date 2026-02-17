@@ -31,7 +31,7 @@
    "link_fieldname": "student_category"
   }
  ],
- "modified": "2024-01-23 14:53:20.521116",
+ "modified": "2026-02-17 03:07:42.060821",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Student Category",
@@ -46,12 +46,37 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Academics User",
+   "role": "EDU - Education Manager",
+   "select": 1,
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Academics User",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Instructor",
+   "select": 1,
+   "share": 1
   }
  ],
  "quick_entry": 1,
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

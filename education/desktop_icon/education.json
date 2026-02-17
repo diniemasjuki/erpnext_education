@@ -11,31 +11,28 @@
  "idx": 50,
  "label": "Education",
  "link": "",
- "link_to": "",
- "link_type": "External",
- "logo_url": "/private/files/education.png",
- "modified": "2026-02-12 08:25:55.519124",
+ "link_to": "Education",
+ "link_type": "Workspace Sidebar",
+ "logo_url": "/files/education.png",
+ "modified": "2026-02-17 03:46:50.349963",
  "modified_by": "Administrator",
  "name": "Education",
  "owner": "Administrator",
  "restrict_removal": 1,
  "roles": [
   {
-   "role": "Academics User"
+   "role": "EDU - Education Manager"
   },
   {
-   "role": "Instructor"
+   "role": "EDU - Academics User"
   },
   {
-   "role": "Student"
+   "role": "EDU - Instructor"
   },
   {
-   "role": "System Manager"
-  },
-  {
-   "role": "Administrator"
+   "role": "EDU - Student"
   }
  ],
- "sidebar": "",
+ "sidebar": "Education",
  "standard": 1
 }

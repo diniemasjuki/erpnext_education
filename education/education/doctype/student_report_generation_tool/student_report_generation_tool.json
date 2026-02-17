@@ -131,7 +131,7 @@
  "hide_toolbar": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-12-07 17:53:40.391739",
+ "modified": "2026-02-17 03:25:23.641199",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Student Report Generation Tool",
@@ -140,12 +140,18 @@
   {
    "create": 1,
    "read": 1,
-   "role": "System Manager",
+   "role": "EDU - Education Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "EDU - Academics User",
    "write": 1
   }
  ],
  "quick_entry": 1,
- "restrict_to_domain": "",
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:EDU-CE-{YYYY}-{#####}",
+ "autoname": "EDU-CE-YYYY.#####.",
  "beta": 1,
  "creation": "2018-10-15 15:35:39.375161",
  "doctype": "DocType",
@@ -22,6 +22,7 @@
    "label": "Program Enrollment",
    "options": "Program Enrollment",
    "reqd": 1,
+   "search_index": 1,
    "set_only_once": 1
   },
   {
@@ -31,6 +32,7 @@
    "label": "Student",
    "options": "Student",
    "reqd": 1,
+   "search_index": 1,
    "set_only_once": 1
   },
   {
@@ -66,11 +68,12 @@
    "fieldname": "program",
    "fieldtype": "Data",
    "label": "Program",
-   "read_only": 1
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "links": [],
- "modified": "2023-02-06 12:24:04.816603",
+ "modified": "2026-02-17 02:16:36.496852",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Course Enrollment",
@@ -85,7 +88,21 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Academics User",
+   "role": "EDU - Education Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Academics User",
+   "select": 1,
    "share": 1,
    "write": 1
   },
@@ -95,11 +112,13 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Instructor",
+   "role": "EDU - Instructor",
+   "select": 1,
    "share": 1
   }
  ],
  "quick_entry": 1,
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

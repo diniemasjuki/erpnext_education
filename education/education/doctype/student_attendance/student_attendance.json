@@ -115,7 +115,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-23 17:14:36.280419",
+ "modified": "2026-02-17 03:04:28.511569",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Student Attendance",
@@ -123,6 +123,24 @@
  "owner": "Administrator",
  "permissions": [
   {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Education Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
    "cancel": 1,
    "create": 1,
    "delete": 1,
@@ -131,7 +149,22 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Academics User",
+   "role": "EDU - Academics User",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Instructor",
+   "select": 1,
    "share": 1,
    "submit": 1,
    "write": 1
@@ -143,12 +176,14 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Student",
+   "role": "EDU - Student",
+   "select": 1,
    "share": 1,
    "submit": 1,
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [

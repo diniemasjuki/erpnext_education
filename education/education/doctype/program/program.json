@@ -110,7 +110,7 @@
    "link_fieldname": "program"
   }
  ],
- "modified": "2026-02-04 12:17:24.314384",
+ "modified": "2026-02-17 02:41:24.479263",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Program",
@@ -122,10 +122,12 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "EDU - Education Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   },
@@ -137,19 +139,32 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Academics User",
+   "role": "EDU - Academics User",
+   "select": 1,
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Instructor",
+   "select": 1,
+   "share": 1
   },
   {
    "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
+   "if_owner": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Instructor",
+   "role": "EDU - Instructor",
+   "select": 1,
    "share": 1,
    "write": 1
   },
@@ -159,7 +174,8 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Student",
+   "role": "EDU - Student",
+   "select": 1,
    "share": 1
   }
  ],

@@ -135,7 +135,7 @@
  "hide_toolbar": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-11-16 14:35:38.467928",
+ "modified": "2026-02-17 02:45:22.543941",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Program Enrollment Tool",
@@ -143,11 +143,22 @@
  "permissions": [
   {
    "create": 1,
+   "delete": 1,
    "read": 1,
-   "role": "Education Manager",
+   "role": "EDU - Education Manager",
+   "select": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "read": 1,
+   "role": "EDU - Academics User",
+   "select": 1,
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

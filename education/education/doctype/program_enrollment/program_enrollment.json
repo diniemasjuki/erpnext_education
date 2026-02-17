@@ -36,7 +36,8 @@
    "in_global_search": 1,
    "label": "Student",
    "options": "Student",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fetch_from": "student.student_name",
@@ -71,7 +72,8 @@
    "in_standard_filter": 1,
    "label": "Program",
    "options": "Program",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "academic_year",
@@ -80,13 +82,15 @@
    "in_standard_filter": 1,
    "label": "Academic Year",
    "options": "Academic Year",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "academic_term",
    "fieldtype": "Link",
    "label": "Academic Term",
-   "options": "Academic Term"
+   "options": "Academic Term",
+   "search_index": 1
   },
   {
    "default": "Today",
@@ -175,13 +179,30 @@
    "link_fieldname": "program_enrollment"
   }
  ],
- "modified": "2024-01-30 15:41:31.016037",
+ "modified": "2026-02-17 02:43:34.535428",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Program Enrollment",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Education Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
   {
    "amend": 1,
    "cancel": 1,
@@ -192,9 +213,23 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Academics User",
+   "role": "EDU - Academics User",
+   "select": 1,
    "share": 1,
    "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "EDU - Instructor",
+   "select": 1,
+   "share": 1,
    "write": 1
   },
   {
@@ -203,10 +238,12 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Student",
+   "role": "EDU - Student",
+   "select": 1,
    "share": 1
   }
  ],
+ "row_format": "Dynamic",
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
