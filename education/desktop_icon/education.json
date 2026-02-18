@@ -14,9 +14,10 @@
  "link_to": "Education",
  "link_type": "Workspace Sidebar",
  "logo_url": "/files/education.png",
- "modified": "2026-02-17 03:46:50.349963",
+ "modified": "2026-02-18 10:00:57.219939",
  "modified_by": "Administrator",
  "name": "Education",
+ "name1": "Education",
  "owner": "Administrator",
  "restrict_removal": 1,
  "roles": [
