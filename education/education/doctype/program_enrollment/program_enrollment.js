@@ -110,6 +110,8 @@ frappe.ui.form.on('Program Enrollment Course', {
 
       let program_courses = (frm.program_courses || []).map(e => e.course)
 
+		return { program_courses }
+
       if (!program_courses.length) {
 				return { filters: [['Course', 'name', 'not in', course_list]] };
       } else {
