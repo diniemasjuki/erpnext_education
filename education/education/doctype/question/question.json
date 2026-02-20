@@ -1,7 +1,8 @@
 {
  "actions": [],
  "allow_import": 1,
- "autoname": "QUESTION.######.",
+ "allow_rename": 1,
+ "autoname": "QUESTION.YYYY.######",
  "creation": "2018-10-01 15:58:00.696815",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -36,7 +37,7 @@
   }
  ],
  "links": [],
- "modified": "2026-02-17 02:48:57.730799",
+ "modified": "2026-02-19 23:57:25.561361",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Question",
@@ -99,5 +100,6 @@
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "question"
 }

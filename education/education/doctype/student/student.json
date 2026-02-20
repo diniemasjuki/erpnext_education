@@ -22,6 +22,7 @@
   "column_break_4",
   "joining_date",
   "id_card",
+  "student_name",
   "image",
   "section_break_7",
   "gender",
@@ -33,6 +34,7 @@
   "column_break_3",
   "blood_group",
   "nationality",
+  "student_category",
   "address_tab",
   "section_break_22",
   "address_line_1",
@@ -58,7 +60,6 @@
   "leaving_certificate_number",
   "column_break_31",
   "reason_for_leaving",
-  "student_name",
   "connections_tab"
  ],
  "fields": [
@@ -282,7 +283,7 @@
    "fieldname": "student_name",
    "fieldtype": "Data",
    "hidden": 1,
-   "label": "Student Name"
+   "label": "Student Full Name"
   },
   {
    "fieldname": "address_tab",
@@ -359,6 +360,12 @@
   {
    "fieldname": "column_break_talw",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_category",
+   "fieldtype": "Link",
+   "label": "Student Category (Fee)",
+   "options": "Student Category"
   }
  ],
  "image_field": "image",
@@ -399,7 +406,7 @@
    "link_fieldname": "student"
   }
  ],
- "modified": "2026-02-17 02:59:41.076903",
+ "modified": "2026-02-20 20:07:51.710586",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Student",

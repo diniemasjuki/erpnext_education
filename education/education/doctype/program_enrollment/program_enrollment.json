@@ -7,20 +7,26 @@
  "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
+  "student_information_section",
   "student",
+  "column_break_ymbx",
   "student_name",
-  "enrollment_date",
+  "section_break_baxg",
   "column_break_4",
   "program",
+  "column_break_xasx",
   "academic_year",
   "academic_term",
-  "image",
+  "column_break_tbmx",
+  "enrollment_date",
+  "student_batch_name",
   "section_break_vsaj",
   "student_category",
-  "student_batch_name",
   "column_break_ebuo",
   "school_house",
   "boarding_student",
+  "column_break_upus",
+  "image",
   "enrolled_courses",
   "courses",
   "fees_tab",
@@ -145,7 +151,8 @@
   },
   {
    "fieldname": "section_break_vsaj",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Fee Element"
   },
   {
    "fieldname": "column_break_ebuo",
@@ -168,6 +175,32 @@
    "fieldtype": "Link",
    "label": "School House",
    "options": "School House"
+  },
+  {
+   "fieldname": "column_break_ymbx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_baxg",
+   "fieldtype": "Section Break",
+   "label": "Academic Session"
+  },
+  {
+   "fieldname": "column_break_xasx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tbmx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_upus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "student_information_section",
+   "fieldtype": "Section Break",
+   "label": "Student Information"
   }
  ],
  "image_field": "image",
@@ -179,7 +212,7 @@
    "link_fieldname": "program_enrollment"
   }
  ],
- "modified": "2026-02-17 02:43:34.535428",
+ "modified": "2026-02-20 20:50:36.520914",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Program Enrollment",

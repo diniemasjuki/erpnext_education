@@ -1,41 +1,51 @@
 {
  "actions": [],
  "allow_import": 1,
+ "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2015-11-04 15:56:30.004034",
  "doctype": "DocType",
  "document_type": "Other",
  "engine": "InnoDB",
  "field_order": [
-  "employee",
   "column_break_jomb",
   "user",
+  "column_break_dvcl",
   "section_break_izud",
+  "first_name",
+  "middle_name",
+  "last_name",
   "instructor_name",
+  "column_break_cpqf",
   "gender",
-  "column_break_5",
   "status",
-  "naming_series",
-  "department",
   "image",
+  "section_break_yzfu",
+  "column_break_5",
+  "employee",
+  "column_break_kvbo",
+  "department",
   "log_details",
-  "instructor_log"
+  "instructor_log",
+  "naming_series"
  ],
  "fields": [
   {
-   "fetch_from": "employee.employee_name",
-   "fetch_if_empty": 1,
+   "fetch_from": "user.full_name",
    "fieldname": "instructor_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "in_global_search": 1,
-   "label": "Instructor Name",
-   "reqd": 1
+   "in_list_view": 1,
+   "label": "Full Name",
+   "options": "Name",
+   "read_only": 1
   },
   {
    "fieldname": "employee",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Employee",
+   "label": "Link with Employee ID",
    "options": "Employee"
   },
   {
@@ -45,9 +55,10 @@
   {
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Naming Series",
    "options": "EDU-INS-.YYYY.-",
-   "set_only_once": 1
+   "read_only": 1
   },
   {
    "fetch_from": "employee.department",
@@ -59,6 +70,7 @@
    "options": "Department"
   },
   {
+   "fetch_from": "user.user_image",
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "hidden": 1,
@@ -85,12 +97,15 @@
    "options": "Active\nLeft"
   },
   {
-   "fetch_from": "employee.gender",
+   "fetch_from": "user.gender",
    "fieldname": "gender",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
    "label": "Gender",
    "options": "Gender",
-   "read_only_depends_on": "employee"
+   "read_only_depends_on": "employee",
+   "reqd": 1
   },
   {
    "fieldname": "user",
@@ -105,11 +120,56 @@
   {
    "fieldname": "column_break_jomb",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "user.first_name",
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "user.middle_name",
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "label": "Middle Name",
+   "options": "Name",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "user.last_name",
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_preview": 1,
+   "label": "Last Name",
+   "options": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cpqf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yzfu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_kvbo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dvcl",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "image",
  "links": [],
- "modified": "2026-02-09 12:43:29.841735",
+ "modified": "2026-02-20 07:28:42.439756",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Instructor",
@@ -121,7 +181,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Instructor"
+   "role": "EDU - Instructor"
   },
   {
    "create": 1,
@@ -131,7 +191,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Education Manager",
+   "role": "EDU - Education Manager",
    "share": 1,
    "write": 1
   },

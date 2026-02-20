@@ -8,17 +8,28 @@
  "document_type": "Document",
  "engine": "InnoDB",
  "field_order": [
-  "academic_year",
-  "group_based_on",
+  "section_break_ubak",
   "student_group_name",
+  "column_break_iuqj",
+  "section_break_awrk",
   "max_strength",
-  "column_break_3",
-  "academic_term",
-  "program",
-  "batch",
+  "column_break_hpra",
   "student_category",
-  "course",
+  "column_break_cpmy",
   "disabled",
+  "group_members_characteristics_section",
+  "column_break_3",
+  "academic_year",
+  "column_break_uxei",
+  "academic_term",
+  "column_break_efdp",
+  "group_based_on",
+  "section_break_ueql",
+  "program",
+  "column_break_xhhu",
+  "course",
+  "column_break_vbtv",
+  "batch",
   "section_break_6",
   "get_students",
   "students",
@@ -51,10 +62,11 @@
    "unique": 1
   },
   {
+   "default": "0",
    "description": "Set 0 for no limit",
    "fieldname": "max_strength",
    "fieldtype": "Int",
-   "label": "Max Strength"
+   "label": "Max Members"
   },
   {
    "fieldname": "column_break_3",
@@ -97,7 +109,7 @@
    "default": "0",
    "fieldname": "disabled",
    "fieldtype": "Check",
-   "label": "Disabled"
+   "label": "Disable Student Group"
   },
   {
    "depends_on": "eval:!doc.__islocal",
@@ -119,8 +131,7 @@
   },
   {
    "fieldname": "section_break_12",
-   "fieldtype": "Section Break",
-   "label": "Instructors"
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "instructors",
@@ -133,10 +144,54 @@
    "fieldtype": "Link",
    "label": "Student Category",
    "options": "Student Category"
+  },
+  {
+   "fieldname": "column_break_xhhu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_uxei",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ubak",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_iuqj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "group_members_characteristics_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_efdp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ueql",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vbtv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_awrk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hpra",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_cpmy",
+   "fieldtype": "Column Break"
   }
  ],
  "links": [],
- "modified": "2026-02-17 03:08:50.865137",
+ "modified": "2026-02-20 20:17:52.991225",
  "modified_by": "Administrator",
  "module": "Education",
  "name": "Student Group",
